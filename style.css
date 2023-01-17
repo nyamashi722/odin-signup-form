@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+/*left side*/
+
+.left-content {
+    display: flex;
+    align-items: center;
+    background: url(sapan-patel-i9Q9bc-WgfE-unsplash.jpg);
+    background-size: cover;
+    width: auto;
+    min-height: 25%;
+    flex-grow: 1;
+}
+
+.logo {
+    height: 5rem;
+    width: auto;
+    margin: 10px;
+}
+
+.text-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(0, 0, 0, 0.6) ;
+    width: 100%;
+    text-align: center;
+}
+
+.text-content {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+
+/* right side*/
+
+.right-content {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    min-height: 75%;
+    flex-grow: 1;
+}
+
+/*right top content*/
+
+.top-content {
+    display: flex;
+    align-items: center;
+    background-color: rgb(240, 240, 240);
+    padding: 20px 25px 20px 30px;
+    flex-grow: 1;
+}
+
+/*form section*/
+
+.headline {
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 1.7rem;
+    justify-items: flex-start;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgb(255, 255, 255);
+    padding: 30px 25px 20px 20px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+input:focus {
+    background-color: rgb(240, 240, 240);
+    outline: none;
+    border: 2px solid rgb(0, 75, 31);
+    box-shadow: 4px 3px 3px rgb(0, 128, 89);
+}
+
+input:focus:invalid {
+    background-color: rgb(240, 240, 240);
+    outline: none;
+    border: 2px solid rgb(75, 0, 0);
+    box-shadow: 4px 3px 3px rgb(128, 0, 0);
+}
+
+.input {
+    display: flex;
+    gap: 2px;
+    flex-direction: column;
+    font-size: 0.65rem;
+    margin: 10px;
+}
+
+input {
+    width: 200px;
+    padding: 5px 4px;
+}
+
+label {
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+/*right bottom section*/
+
+.bottom-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: rgb(240, 240, 240);
+    padding: 30px 25px 20px 30px;
+    flex-grow: 1;
+}
+
+button {
+    width: fit-content;
+    border: solid rgb(252, 150, 18);
+    border-radius: 5px;
+    padding: 10px 15px;
+    box-shadow: none;
+    background-color: rgb(252, 150, 18);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
